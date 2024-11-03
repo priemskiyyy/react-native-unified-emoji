@@ -1,6 +1,6 @@
 {
   "name": "react-native-unified-emoji",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Component to render unified emoji on different platforms",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -39,8 +39,8 @@
   "scripts": {
     "example": "yarn workspace react-native-unified-emoji-example",
     "test": "jest",
-    "typecheck": "tsc",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint:typescript": "tsc",
+    "lint:eslint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "release": "release-it"
@@ -48,18 +48,29 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "emoji",
+    "react-native-emoji",
+    "react-native-unified-emoji",
+    "render apple emoji",
+    "render google emoji",
+    "react native emoji image",
+    "image emoji",
+    "rn emoji",
+    "react native emoji",
+    "react native android emoji",
+    "react native ios emoji"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://yevheniipryiemskyi@gmail.com.git"
+    "url": "git+https://github.com/priemskiyyy/react-native-unified-emoji.git"
   },
   "author": "priemskiyyy <yevheniipryiemskyi@gmail.com> (https://yevheniipryiemskyi@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://yevheniipryiemskyi@gmail.com/issues"
+    "url": "https://github.com/priemskiyyy/react-native-unified-emoji/issues"
   },
-  "homepage": "https://yevheniipryiemskyi@gmail.com#readme",
+  "homepage": "https://github.com/priemskiyyy/react-native-unified-emoji/#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -68,6 +79,7 @@
     "@evilmartians/lefthook": "^1.5.0",
     "@react-native/eslint-config": "^0.73.1",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@testing-library/react-native": "^12.8.1",
     "@types/jest": "^29.5.5",
     "@types/react": "^18.2.44",
     "commitlint": "^17.0.2",
@@ -80,6 +92,7 @@
     "react": "18.2.0",
     "react-native": "0.74.5",
     "react-native-builder-bob": "^0.30.3",
+    "react-test-renderer": "^18.3.1",
     "release-it": "^15.0.0",
     "typescript": "^5.2.2"
   },
@@ -99,6 +112,9 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!expo-image)"
     ]
   },
   "commitlint": {
@@ -182,5 +198,9 @@
   "create-react-native-library": {
     "type": "library",
     "version": "0.42.2"
+  },
+  "dependencies": {
+    "expo": "^51.0.0",
+    "expo-image": "^1.13.0"
   }
 }
