@@ -1,8 +1,13 @@
-# 🌐 react-native-unified-emoji
+# 🍔 react-native-unified-emoji
 
 A React Native component to render emojis consistently across iOS, Android, and more, using unified emoji sets. Whether you're creating chat apps, social feeds, or fun, emoji-laden interfaces, `react-native-unified-emoji` has you covered!
 
 [![npm version](https://badge.fury.io/js/react-native-unified-emoji.svg)](https://badge.fury.io/js/react-native-unified-emoji)
+
+<p align="center">
+  <img src="images/android.png" alt="Android" style="margin-right: 20px;" width="150" height="320px"/>
+  <img src="images/ios.png" alt="iOS" width="150" height="320px"/>
+</p>
 
 ## ✨ Features
 
