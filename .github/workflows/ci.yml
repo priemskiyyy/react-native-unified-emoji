@@ -20,11 +20,11 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Lint files
-        run: yarn lint
+      - name: lint eslint
+        run: yarn lint:eslint
 
-      - name: Typecheck files
-        run: yarn typecheck
+      - name: lint typescript
+        run: yarn lint:typescript
 
   test:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run unit tests
-        run: yarn test --maxWorkers=2 --coverage
+        run: yarn test:unit --maxWorkers=2 --coverage
 
   build-library:
     runs-on: ubuntu-latest

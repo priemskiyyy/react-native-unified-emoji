@@ -38,7 +38,7 @@
   ],
   "scripts": {
     "example": "yarn workspace react-native-unified-emoji-example",
-    "test": "jest",
+    "test:unit": "jest",
     "lint:typescript": "tsc",
     "lint:eslint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
