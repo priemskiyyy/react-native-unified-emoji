@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Emoji not crash when children is empty 1`] = `null`;
+
+exports[`Emoji renders correctly 1`] = `
+<Image
+  onError={[Function]}
+  onLoad={[Function]}
+  onLoadStart={[Function]}
+  source={
+    {
+      "cacheKey": "https://emojicdn.elk.sh/👋?style=apple",
+      "uri": "https://emojicdn.elk.sh/👋?style=apple",
+    }
+  }
+  testID="emoji"
+/>
+`;
