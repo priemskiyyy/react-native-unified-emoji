@@ -4,6 +4,7 @@ import { render } from '@testing-library/react-native';
 jest.mock('expo-image', () => ({
   Image: 'Image',
 }));
+
 describe('Emoji', () => {
   it('renders correctly', () => {
     const { toJSON, getByTestId } = render(<Emoji testID={'emoji'}>👋</Emoji>);
